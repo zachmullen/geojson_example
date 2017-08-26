@@ -1,6 +1,6 @@
 FROM python:2.7
 
-RUN pip install girder_worker_utils
+RUN pip install -U girder_worker_utils
 
 COPY script.py /script.py
 

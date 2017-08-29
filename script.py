@@ -3,7 +3,7 @@ from girder_worker_utils import Input, Output, docker_task, task_cli
 
 
 @docker_task(
-    image='zachmullen/geojson:latest', name='Largest county extraction',
+    image='zachmullen/geojson_example:latest', name='Largest county extraction',
     description='Extract the largest county in each state', inputs=[
         Input('infile', name='Input file', description='GeoJSON file with county info', type='file')
     ], outputs=[
